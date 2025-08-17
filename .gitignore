@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# Builds / coverage
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.iml
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+# como solicitado, este arquivo não está no .gitignore
