@@ -17,12 +17,12 @@
 import './commands'
 import './pages/webtables.page'
 
-// 1) IGNORAR QUALQUER uncaught exception (não deixa falhar)
+
 Cypress.on('uncaught:exception', (_err, _runnable) => {
-  return false;   // ignora TUDO que estourar na app/terceiros
+  return false;
 });
 
-// 2) ESCONDER do log a linha "uncaught:exception" e qualquer chamada de backend
+
 (function hideNoise() {
   const id = 'hide-noise-style';
   const css = `
@@ -49,7 +49,7 @@ Cypress.on('uncaught:exception', (_err, _runnable) => {
 })();
 
 
-// Gera um email aleatório e guarda no Cypress.env
+
 before(() => {
   const random = Math.random().toString(36).substring(2, 8);
   const email = `teste_${random}@editar.com`;

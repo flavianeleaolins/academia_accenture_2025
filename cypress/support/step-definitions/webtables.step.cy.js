@@ -1,4 +1,3 @@
-//import { cy } from '@faker-js/faker'
 import { Given, When, And, Then } from 'cypress-cucumber-preprocessor/steps'
 
 Given('que o usuário acessa a página de WebTables', () => {
